@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: var(--bg-body);
+}
+
+:root {
+    --bg-gradient: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+    --bg-body: rgb(34, 34, 34);
+    --font-size-title: 5rem
+    --box-shadow-default: 10px 10px 10px lightgrey;
+    --text-color: red;
+}
+.dark-theme{
+    --bg-body: rgb(34, 34, 34);
+    --bg-gradient: linear-gradient(90deg, #fc466b 0%, #daae51 100%);
+    --font-size-title: 5rem;
+}
+.light-theme{
+    --bg-body: rgb(247, 247, 247);
+    --bg-gradient: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+    --font-size-title: 5rem
+}
+h1{
+    background: var(--bg-gradient);
+    font-size: var(--font-size-title);
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+a{
+    text-decoration: none;
+    background: var(--bg-gradient);
+    padding: 8px 14px;
+    border-radius: 4px;
+    color: #fafafa;
+    box-shadow: var(--box-shadow-default);
+}
+
+p{
+    color: var(--text-color, blue);
+}
